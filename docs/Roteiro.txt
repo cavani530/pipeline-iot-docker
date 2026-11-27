@@ -1,0 +1,7 @@
+Como transformar um arquivo de temperaturas em informação para quem monitora um ambiente? O projeto usa Python para validar cada leitura e Docker para preparar o banco PostgreSQL.
+
+A primeira consulta calcula a média por sala e posição. Interno e externo são pontos de medição. O identificador no arquivo corresponde a uma leitura. Room Admin (In): 32,00 °C · Room Admin (Out): 42,71 °C
+
+A segunda consulta conta as leituras em cada hora do dia. Isso ajuda a investigar interrupções e diferenças na frequência da coleta. Hora com maior contagem: 19h (3 leituras; primeiro horário em caso de empate).
+
+A última consulta mostra as temperaturas mínimas e máximas de cada dia. Faixa observada: 32 a 46 °C. Maior amplitude diária: 9 °C. Em uma instalação real, esses extremos ajudariam a escolher quais registros investigar antes de emitir um alerta.
