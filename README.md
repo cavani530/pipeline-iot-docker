@@ -59,6 +59,7 @@ A carga processou 97.606 linhas e gravou 97.605 leituras únicas. Uma duplicata 
 ## Relatório, vídeo e reprodução
 
 - [Relatório em PDF](docs/Relatorio-IoT.pdf)
+- [Assistir ao pitch no YouTube (1min32s)](https://www.youtube.com/watch?v=T_WUER_p4u8)
 - [Pitch narrado em português (MP4)](docs/Pitch-IoT.mp4)
 - [Roteiro da narração](docs/Roteiro.txt)
 - [Execução verificada com Docker e PostgreSQL](https://github.com/cavani530/pipeline-iot-docker/actions/runs/45935931987)
