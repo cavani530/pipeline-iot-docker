@@ -50,15 +50,20 @@ O campo id identifica a leitura. A combinação de room_id/id e out/in identific
 
 ## Resultados e figuras
 
-O recorte reproduz oito registros publicados em [Data Pre-Processing and Visualization OER](https://nurfnick.github.io/Data_Viz/Content/Solutions/mySolutions.html). Em 5 de novembro as leituras selecionadas variam de 32 a 41 °C. Em 17 de novembro variam de 45 a 46 °C. Só uma leitura do recorte é interna. A diferença entre médias merece análise com a série completa.
+A carga processou 97.606 linhas e gravou 97.605 leituras únicas. Uma duplicata integral foi removida. A média interna foi de 30,45 °C e a externa de 36,27 °C. A maior concentração ocorreu às 14h, com 7.248 leituras. Os registros válidos variaram de 21 a 51 °C. A maior amplitude em uma única data foi de 28 °C.
 
-![Médias da amostra](docs/amostra-0.png)
-![Volume horário da amostra](docs/amostra-1.png)
-![Extremos diários da amostra](docs/amostra-2.png)
+![Médias por ponto no Streamlit](docs/painel-0.png)
+![Contagens por hora no Streamlit](docs/painel-1.png)
+![Temperaturas extremas por dia no Streamlit](docs/painel-2.png)
 
-## Capturas do Streamlit, PDF e vídeo
+## Relatório, vídeo e reprodução
 
-O fluxo GitHub Actions em .github/workflows/demonstracao.yml baixa a base completa, sobe os contêineres, repete a carga, abre cada aba do Streamlit em Chromium e monta o PDF e o MP4 narrado em português com as respectivas capturas. Em Actions, abra a execução concluída e baixe o artefato Entrega-IoT. As imagens painel-0.png a painel-2.png correspondem, na ordem, às médias, ao volume e aos extremos. O pacote inicial contém gráficos de conferência da amostra e uma prévia legendada.
+- [Relatório em PDF](docs/Relatorio-IoT.pdf)
+- [Pitch narrado em português (MP4)](docs/Pitch-IoT.mp4)
+- [Roteiro da narração](docs/Roteiro.txt)
+- [Execução verificada com Docker e PostgreSQL](https://github.com/cavani530/pipeline-iot-docker/actions/runs/45935931987)
+
+O fluxo em .github/workflows/demonstracao.yml baixa a base, executa a carga duas vezes, abre as três abas do Streamlit e publica as evidências em docs/. Para repetir, use Actions → Executar pipeline e gerar evidências → Run workflow.
 
 ## Git e publicação
 
